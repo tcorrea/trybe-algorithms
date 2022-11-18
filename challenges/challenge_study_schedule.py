@@ -1,4 +1,15 @@
 def study_schedule(permanence_period: list[tuple], target_time: int):
+    """
+    Parameters
+    ----------
+    permanence_period: list[tuple]
+    target_time: int
+
+    Returns
+    -------
+    int | None
+
+    """
     # qual horário tem a maior quantidade de pessoas
     # estudantes acessando o conteúdo da plataforma?
 
