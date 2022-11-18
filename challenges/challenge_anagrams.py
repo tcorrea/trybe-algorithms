@@ -1,4 +1,15 @@
 def is_anagram(first_string: str, second_string: str) -> tuple[str, str, bool]:
+    """
+    Parameters
+    ----------
+    first_string: str
+    second_string: str
+
+    Returns
+    -------
+    tutle[str, str, bool]
+
+    """
     # first_string = "amor"
     # second_string = "roma"
     # saída: ('amor', 'amor', True)
