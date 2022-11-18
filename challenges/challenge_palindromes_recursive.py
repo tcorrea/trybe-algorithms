@@ -14,7 +14,7 @@ def is_palindrome_recursive(
 
     """
     # verifica se existe word: retorna False
-    if not word:
+    if word == "":
         return False
 
     # retorna True se for passado somente uma letra no parametro word
