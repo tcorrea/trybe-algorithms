@@ -32,7 +32,7 @@ def find_duplicate(nums: list) -> bool | int:
             # adiciona o numero na lista de resultado
             numbers_found.append(nums[0])
 
-        # remove o promeiro item de nums
+        # remove o primeiro item de nums
         nums.pop(0)
 
     if len(numbers_found) == 1:
