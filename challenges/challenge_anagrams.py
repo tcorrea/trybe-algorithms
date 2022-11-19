@@ -1,3 +1,6 @@
+from challenges.quick_sort import quick_sort
+
+
 def is_anagram(first_string: str, second_string: str) -> tuple[str, str, bool]:
     """
     Parameters
@@ -13,8 +16,6 @@ def is_anagram(first_string: str, second_string: str) -> tuple[str, str, bool]:
     # first_string = "amor"
     # second_string = "roma"
     # saída: ('amor', 'amor', True)
-    if not first_string or not second_string:
-        return (first_string, second_string, False)
 
     first_lower: str = first_string.lower()
     second_lower: str = second_string.lower()
@@ -28,38 +29,7 @@ def is_anagram(first_string: str, second_string: str) -> tuple[str, str, bool]:
     sorted_first: str = "".join(list_first)
     sorted_second: str = "".join(list_second)
 
+    if not sorted_first or not sorted_second:
+        return (sorted_first, sorted_second, False)
+
     return (sorted_first, sorted_second, sorted_first == sorted_second)
-
-
-# função retirado do course
-def quick_sort(some_list, start, end):
-    if start < end:
-        p = partition(some_list, start, end)
-        # Os menores em relação ao pivô ficarão à esquerda
-        quick_sort(some_list, start, p - 1)
-        # Os maiores elementos em relação ao pivô ficarão à direita
-        quick_sort(some_list, p + 1, end)
-
-
-# função auxiliar responsável pela partição do array
-# escolhendo um pivô e fazendo movimentações dos sub arrays gerados
-def partition(some_list, start, end):
-    pivot = some_list[end]
-    delimiter = start - 1
-
-    for index in range(start, end):
-        # o índice será o elemento em análise no momento,
-        # ele passará por todos os elementos
-        if some_list[index] <= pivot:
-            delimiter = delimiter + 1
-            some_list[index], some_list[delimiter] = (
-                some_list[delimiter],
-                some_list[index],
-            )
-
-    some_list[delimiter + 1], some_list[end] = (
-        some_list[end],
-        some_list[delimiter + 1],
-    )
-
-    return delimiter + 1
