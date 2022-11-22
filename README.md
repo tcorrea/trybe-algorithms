@@ -1,6 +1,6 @@
 ![TRYBE_ALGORITHMS](https://user-images.githubusercontent.com/20843662/203112333-6e945e15-cca5-4428-987b-8b689d8770ab.png)
 
-![GitHub top language](https://img.shields.io/github/languages/top/tcorrea/trybe-tech-news)
+![GitHub top language](https://img.shields.io/github/languages/top/tcorrea/trybe-algorithms)
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat-square&logo=linkedin&logoColor=white&color=ffb86c)](https://www.linkedin.com/in/thiago-de-carvalho-correa/)
 
 # Descrição
